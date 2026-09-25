@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lina - Intégratrice Web | Portfolio</title>
+
+    <!--Titre affiché dans le navigateur-->
+    <title>Lina - Intégratrice Web  Portfolio</title>
     <meta name="description" content="Portfolio de Lina, intégratrice web spécialisée en React, HTML, CSS et JavaScript.">
     <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="Lina - Intégratrice Web  Portfolio">
+<meta property="og:description" content="Portfolio de Lina, intégratrice web spécialisée en React, HTML, CSS et JavaScript.">
+<meta property="og:type" content="website">
+
 </head>
 <body>
+
+<!-- Loader -->
+    <div id="loader">
+    <div class="spinner"></div>
+
+</div>
 <header>
     <h1>Lina</h1>
     <p>Intégratrice web passionnée par le design visuel autant que par la logique de fonctionnement des applications.</p>
 
+<!-- Navigation -->
     <nav>
     <a href="#a-propos">À propos</a>
     <a href="#projets">Projets</a>
@@ -19,23 +33,89 @@
     <a href="#contact">Contact</a>
 </nav>
 </header>
+
+<!-- Section À propos -->
 <section id="a-propos">
     <h2>À propos</h2>
     <p>Je travaille actuellement comme assistante administrative dans une société de transport, et je me forme en même temps au développement web. Ce qui m'intéresse particulièrement, c'est l'IA et le code, et j'aimerais un jour travailler en Asie, surtout en Corée du Sud.</p>
+    <p>Je maîtrise React, Redux, HTML et CSS. Sur le projet ArgentBank, j'ai développé un système d'authentification complet avec gestion des erreurs et protection des données utilisateur.</p>
+    <p>Je suis fière de mon projet d'optimisation pour Nina Carducci, une photographe dont le site était trop lent à charger. Après un audit complet, j'ai livré un site optimisé avec un score Lighthouse nettement amélioré.</p>
+    <p>Mon approche : je ne me contente jamais d'une solution qui "marche" sans la comprendre entièrement 
+    je vérifie chaque choix technique, je pose des questions jusqu'à être sûre d'avoir compris.</p>
+    <p>Mon objectif est de partir en Corée du Sud pour apprendre le coréen à l'Institut Yonsei. Ensuite, j'aimerais continuer vers le design UX/UI.</p>
 </section>
+
+<!-- Section Parcours -->
+<section id="parcours">
+    <h2>Mon Parcours</h2>
+    <div class="parcours-item">
+        <span class="parcours-date">2024</span>
+        <p>Assistante administrative chez Sofia Transports</p>
+    </div>
+    <div class="parcours-item">
+        <span class="parcours-date">2025</span>
+        <p>Début de la formation Intégratrice Web chez OpenClassrooms, financée par mon employeur via l'OPCO Mobilités</p>
+    </div>
+    <div class="parcours-item">
+        <span class="parcours-date">2026</span>
+        <p>Réalisation de mes projets de formation (ArgentBank, Nina Carducci, Menu Maker...)</p>
+    </div>
+</section>
+
+<!-- Section Projets -->
 <section id="projets">
     <h2>Mes projets</h2>
+
+    <!-- Projet ArgentBank -->
+    <article>
+    <h3>ArgentBank</h3>
+
+    <!-- Image du projet ArgentBank -->
+    <img src="img/argentbank.png" alt="Capture d'écran de la page d'accueil ArgentBank" class="projet-image">
+    <div class="logos-tech">
+        <img src="img/logo/argentBank/logoReact.webp" alt="React" class="logo-icon">
+        <img src="img/logo/argentBank/logoRedux.png" alt="Redux" class="logo-icon">
+        <img src="img/logo/argentBank/logoHTML5.webp" alt="HTML5" class="logo-icon">
+        <img src="img/logo/argentBank/LogoCSS.png" alt="CSS" class="logo-icon">
+    </div>
+    <p>Application web React pour une banque en ligne fictive : authentification sécurisée, gestion des erreurs, protection du profil utilisateur.</p>
     
-    <article>
-        <h3>ArgentBank</h3>
-        <p>Application web React pour une banque en ligne fictive : authentification sécurisée, gestion des erreurs, protection du profil utilisateur.</p>
-    </article>
+    <h4>Compétences développées</h4>
+    <p>Compréhension approfondie du code React/Redux existant, et capacité à écrire moi-même de nouvelles fonctionnalités à partir de zéro.</p>
+    
+    <h4>Résultats</h4>
+    <p>Application fonctionnelle : connexion sécurisée, gestion des erreurs, accès au profil utilisateur protégé.</p>
+    
+    <h4>Perspectives d'amélioration</h4>
+    <p>Ajouter la gestion des transactions bancaires, comme prévu dans la suite du projet initial.</p>
+</article>
 
+<!-- Projet Nina Carducci -->
     <article>
-        <h3>Nina Carducci - Optimisation SEO</h3>
-        <p>Audit et optimisation complète d'un site de photographe : performance, accessibilité, référencement local.</p>
-    </article>
+    <h3>Nina Carducci - Optimisation SEO</h3>
 
+    <!-- Image du projet Nina Carducci -->
+    <img src="img/NinaCarducci.png" alt="Capture d'écran du site Nina Carducci optimisé" class="projet-image">
+    <div class="logos-tech">
+        <img src="img/logo/NinaCarducci/Lighthouse.png" alt="Lighthouse" class="logo-icon">
+        <img src="img/logo/NinaCarducci/logoPurgeCSS.webp" alt="PurgeCSS" class="logo-icon">
+        <img src="img/logo/NinaCarducci/logoWave.webp" alt="Wave" class="logo-icon">
+        <img src="img/logo/NinaCarducci/logoWebP.jpg" alt="WebP" class="logo-icon">
+    </div>
+    <p>Audit et optimisation complète d'un site de photographe : performance, accessibilité, référencement local.</p>
+    
+    <h4>Compétences développées</h4>
+    <p>Réalisation d'un audit technique complet (performance et accessibilité), et mise en pratique de bonnes pratiques de prospection freelance.</p>
+    
+    <h4>Résultats</h4>
+    <p>Score de performance Lighthouse nettement amélioré, accessibilité validée via Wave.</p>
+    
+    <h4>Perspectives d'amélioration</h4>
+    <p>Poursuivre le suivi du référencement local dans le temps, et proposer un contrat de maintenance régulière.</p>
+</article>
+</section>
+
+<!-- Section Compétences -->
     <section id="competences">
     <h2>Compétences</h2>
     <ul>
@@ -45,12 +125,18 @@
         <li>CSS</li>
         <li>JavaScript</li>
     </ul>
+    </section>
 
+<!-- Section Contact -->
     <section id="contact">
     <h2>Contact</h2>
     <p>Vous pouvez me contacter par email : <a href="mailto:malkilina04@gmail.com">malkilina04@gmail.com</a></p>
 </section>
-</section>
-</section>
+
+
+
+<!--Fichier JavaScript -->
+<script src="script.js"></script>
+
 </body>
 </html>
